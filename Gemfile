@@ -5,6 +5,8 @@ ruby "3.2.0"
 
 gem 'faker', '~> 3.0'
 
+gem "pagy", "~> 5.10"
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.5", ">= 7.0.5.1"
 
