@@ -1,9 +1,19 @@
-<h1>New twitter</h1>
+<div id="inputTweetArea" class="tweet-wrap">
+  
+      <div class="col-xs">
+          <img src="https://toppng.com/uploads/preview/roger-berry-avatar-placeholder-11562991561rbrfzlng6h.png" alt="" class="avator">
+      </div>
 
-<%= render "form", twitter: @twitter %>
 
-<br>
+      <%= render "form", twitter: @twitter %>
 
-<div>
-  <%= link_to "Back to twitters", twitters_path %>
+
+
+    <div class="d-flex justify-content-center mt-2">
+      <%= link_to "Back to twitters", twitters_path %>
+    </div>
+
+  
 </div>
+
+        

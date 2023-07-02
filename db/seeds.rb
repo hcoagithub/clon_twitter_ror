@@ -8,5 +8,5 @@
 
 
 1000.times do |t|
-    Twitter.create(description:Faker::Lorem.paragraphs, user_name:Faker::Twitter.screen_name)
+    Twitter.create(description:Faker::Lorem.paragraph_by_chars, user_name:Faker::Twitter.screen_name)
 end

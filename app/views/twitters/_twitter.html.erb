@@ -1,12 +1,55 @@
 <div id="<%= dom_id twitter %>">
-  <p>
-    <strong>Description:</strong>
-    <%= twitter.description %>
-  </p>
+  
+  <div id="tweetCards">
+  
+      <div class="tweet-wrap" style="border-radius:20px">
+           
+          <div class="tweet-header">
+              <img src="https://toppng.com/uploads/preview/roger-berry-avatar-placeholder-11562991561rbrfzlng6h.png"
+                  alt="" class="avator">
 
-  <p>
-    <strong>User name:</strong>
-    <%= twitter.user_name %>
-  </p>
+              <div class="tweet-header-info">
+
+                <span>
+                    <%= twitter.user_name %>
+                  </span>
+                  <span>
+                    <%= twitter.updated_at.strftime("%d %b %Y, %H:%M") %>
+                  </span>
+                
+                  <p>🔥 <%= twitter.description %> </p>
+
+              </div>
+
+              
+          </div>
+
+          <div class="d-flex justify-content-between">
+
+                
+                <%= link_to edit_twitter_path(twitter) do %>
+                  <i class="fa-solid fa-pen-to-square"></i>
+                <% end %>
+                
+               
+                <%= link_to twitter_path(twitter), class:'button', data: {
+                    turbo_method: :delete,
+                    turbo_confirm: 'Seguro de este tweet?'
+                } do %>
+                  <i class="fa-solid fa-trash"></i>
+                <% end %>
+
+               
+               
+
+          </div>
+
+      </div>
+
+      
+
+  </div>
 
 </div>
+
+

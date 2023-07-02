@@ -1,10 +1,22 @@
-<h1>Editing twitter</h1>
+<div id="inputTweetArea" class="tweet-wrap">
 
-<%= render "form", twitter: @twitter %>
+    <div class="col-xs">
+        <img src="https://toppng.com/uploads/preview/roger-berry-avatar-placeholder-11562991561rbrfzlng6h.png" alt=""
+            class="avator">
+    </div>
+    
+  
+    <%= render "form", twitter: @twitter %>
+
+    <div class="mt-2">
+      <%= link_to "Back to twitters", twitters_path %>
+    </div>
+</div>
+
+
 
 <br>
 
 <div>
-  <%= link_to "Show this twitter", @twitter %> |
-  <%= link_to "Back to twitters", twitters_path %>
+  
 </div>

@@ -1,10 +1,7 @@
-<p style="color: green"><%= notice %></p>
-
 <%= render @twitter %>
 
-<div>
-  <%= link_to "Edit this twitter", edit_twitter_path(@twitter) %> |
-  <%= link_to "Back to twitters", twitters_path %>
 
-  <%= button_to "Destroy this twitter", @twitter, method: :delete %>
+
+<div class="d-flex justify-content-center mt-2">
+    <%= link_to "Back to twitters", twitters_path, class:'btn btn-light' %>
 </div>
