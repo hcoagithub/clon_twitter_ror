@@ -3,6 +3,9 @@
     <%= form.label :query_text, "Buscar tweet por ID o USERNAME:", class:'w-100' %>
     <%= form.text_field :query_text, class:'w-100', value: params[:query_text]%>
     <%= form.button 'Buscar',  class:'btn rounded-bindle mt-2   ' %>
+    <%= link_to new_twitter_path do %>
+      <%= form.button 'New Tweet',  class:'btn rounded-bindle mt-2   ' %>
+  <% end %>
 <%end%>
 
 
